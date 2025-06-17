@@ -20,7 +20,7 @@ jobs:
           pandoc input.md -o output/ebook.pdf --toc --pdf-engine=xelatex
 
       - name: Upload PDF as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ebook
           path: output/ebook.pdf
